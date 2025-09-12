@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Compile the code to the latest JavaScript version (ESNext).
+    "module": "CommonJS", // Use CommonJS module system (Node.js standard).
+    "sourceMap": true, // Generate source maps for debugging TypeScript in tools like VS Code.
+    "esModuleInterop": true, // Enables default imports from CommonJS modules (e.g., `import fs from 'fs'`).
+    "resolveJsonModule": true, // Allows importing JSON files directly as modules.
+  }
+}
