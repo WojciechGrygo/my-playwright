@@ -29,7 +29,14 @@ export default defineConfig({
         storageState: 'tmp/session.json',
       },
       dependencies: ['setup'],
-      testMatch: /UI/,
+      testMatch: '/UI-logged/*',
+    },
+    {
+      name: 'UI-not-logged',
+      use: {
+        ...devices['Desktop Chrome'],
+      },
+      testMatch: '/UI-not-logged/*',
     },
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
     { name: 'API', use: { ...devices['Desktop Chrome'] }, testMatch: /API/ },
