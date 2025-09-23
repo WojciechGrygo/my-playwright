@@ -1,11 +1,8 @@
 {
-	"servers": {
-		"my-mcp-server-playwright": {
-			"command": "npx",
-			"args": [
-				"@playwright/mcp@latest"
-			]
-		}
-	},
-	"inputs": []
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  }
 }
