@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import path from 'path';
 
-const authFile = path.join(__dirname, '../playwright/.auth/user.json');
+const authFile = path.join(__dirname, '../tmp/session.json');
 
 test('Login', async ({ page }) => {
   const userName = process.env.USER;

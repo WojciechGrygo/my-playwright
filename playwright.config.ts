@@ -26,7 +26,7 @@ export default defineConfig({
       name: 'UI',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json',
+        storageState: 'tmp/session.json',
       },
       dependencies: ['setup'],
       testMatch: /UI/,
