@@ -23,7 +23,7 @@ export default defineConfig({
 
   projects: [
     {
-      name: 'UI',
+      name: 'UI-logged',
       use: {
         ...devices['Desktop Chrome'],
         storageState: 'tmp/session.json',
@@ -40,5 +40,6 @@ export default defineConfig({
     },
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
     { name: 'API', use: { ...devices['Desktop Chrome'] }, testMatch: /API/ },
+    { name: 'Accessibility', use: { ...devices['Desktop Chrome'] }, testMatch: '/Accessibility/*' },
   ],
 });
