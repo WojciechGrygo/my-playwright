@@ -20,6 +20,7 @@ export default defineConfig({
     video: 'off',
     screenshot: 'off',
   },
+  snapshotPathTemplate: '{testDir}/__screenshots__/{testFilePath}/{arg}{ext}',
 
   projects: [
     {
@@ -41,5 +42,6 @@ export default defineConfig({
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
     { name: 'API', use: { ...devices['Desktop Chrome'] }, testMatch: /API/ },
     { name: 'Accessibility', use: { ...devices['Desktop Chrome'] }, testMatch: '/Accessibility/*' },
+    { name: 'Visual-testing', use: { ...devices['Desktop Chrome'] }, testMatch: '/Visual-testing/*' },
   ],
 });
